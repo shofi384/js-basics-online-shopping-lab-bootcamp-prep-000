@@ -49,6 +49,15 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   var index = -1, count = 0;
+  while(count<cart.length) {
+    if(cart[count].itemName === cardNumber) {
+      index = count
+      break
+    }
+    else {
+      count++
+    }
+  }
   if(index > -1) {
     cart.splice(index, 1)
   }
