@@ -44,10 +44,6 @@ function total() {
 }
 
 function removeFromCart(item) {
-  delete cart.itemName
-}
-
-function placeOrder(cardNumber) {
   var index = -1, count = 0;
   while(count<cart.length) {
     if(cart[count].itemName === cardNumber) {
@@ -63,6 +59,10 @@ function placeOrder(cardNumber) {
     return cart
   }
   else {
-    return 
+    return 'That item is not in your cart.'
   }
+}
+
+function placeOrder(cardNumber) {
+  
 }
