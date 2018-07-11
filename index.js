@@ -20,7 +20,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if(cart.length<1) {
+  if(cart.length < 1) {
+    return 'Your shopping cart is empty.'
+  }
+  else if(cart.length === 1) {
     return 'Your shopping cart is empty.'
   }
   var result = 'In your cart, you have '
