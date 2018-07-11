@@ -26,7 +26,7 @@ function viewCart() {
   else if(cart.length === 1) {
     return 'Your shopping cart is empty.'
   }
-  var result = 'In your cart, you have '
+  var result = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`
   var count = 0;
   while(count<cart.length-1) {
     result += `${cart[count].itemName} at $${cart[count++].itemPrice}, `
