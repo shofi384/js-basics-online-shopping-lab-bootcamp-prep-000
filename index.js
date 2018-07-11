@@ -60,6 +60,9 @@ function placeOrder(cardNumber) {
   }
   if(index > -1) {
     cart.splice(index, 1)
+    return cart
   }
-  return cart
+  else {
+    return 
+  }
 }
