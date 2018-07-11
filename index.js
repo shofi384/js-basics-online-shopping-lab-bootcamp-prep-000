@@ -20,7 +20,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var result = 'In your cart, you have '
+  var count = 0;
+  while(count<cart.length-1) {
+    result += `${cart[count].itemName} at $${cart[count++].itemPrice}, `
+  }
+  result += `and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
+  return result;
 }
 
 function total() {
