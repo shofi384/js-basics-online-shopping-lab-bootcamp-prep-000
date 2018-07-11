@@ -46,7 +46,7 @@ function total() {
 function removeFromCart(item) {
   var index = -1, count = 0;
   while(count<cart.length) {
-    if(cart[count].itemName === cardNumber) {
+    if(cart[count].itemName === item) {
       index = count
       break
     }
